@@ -1,0 +1,20 @@
+head
+  title Counterstrike
+  
+h1(class='test') Countersrtrike game stats
+#container.col
+  form(action='')
+    label(for='teams') Choose a team:
+    select#teams(name='teams' class='team')
+      option(value='Fanatic') Fanatic
+      option(value='Mousesports') Mousesports
+      option(value='Astralis') Astralis
+      option(value='G2') G2
+    label(for='fname') Score
+    input#score(type='text' name='score' class='score')
+    br
+    br
+    input(type='submit' value='Submit' class='submit')
+
+script(src="http://localhost:3000/primus/primus.js") 
+script(src="/javascripts/dashboard.js")
